@@ -1,4 +1,4 @@
-resource "aws_vpc" "my_vpc" {
+resource "aws_vpc" "this" {
   cidr_block = "172.16.0.0/16"
 
   tags = {
@@ -6,7 +6,7 @@ resource "aws_vpc" "my_vpc" {
   }
 }
 
-resource "aws_subnet" "my_subnet" {
+resource "aws_subnet" "this" {
   vpc_id            = aws_vpc.my_vpc.id
   cidr_block        = "172.16.10.0/24"
   availability_zone = "us-east-1a"
