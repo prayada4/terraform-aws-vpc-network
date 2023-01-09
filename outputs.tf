@@ -7,5 +7,5 @@ output "vpc_id" {
 
 output "vpc_subnets" {
   description = "List of IDs of database subnets"
-  value       = aws_subnet.vpc_subnet.id
+  value       = aws_subnet.this.id
 }
